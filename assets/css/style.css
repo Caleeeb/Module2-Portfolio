@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #25395C;
+    --secondary-color: #fca78a;
+    --tertiary-color: #A4B0FF;
+    --complimentary-color: #ea7166; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
