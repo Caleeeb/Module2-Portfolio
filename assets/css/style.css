@@ -3,6 +3,7 @@
     --secondary-color: #fac4b2;
     --tertiary-color: #A4B0FF;
     --complimentary-color: #ea7166; 
+    --bg-color: #f5e1da;
 }
 
 * {
@@ -13,6 +14,7 @@
 
 body {
     color: var(--primary-color);
+    background-color: var(--bg-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,6 +39,7 @@ header h1 {
     color: var(--primary-color)
 }
 
+
 header nav {
     margin: 7px 0;
 }
@@ -45,7 +48,7 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     list-style: none;
 }
 
@@ -54,6 +57,8 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+
+
 
 /* HERO STYLING */
 .hero {
@@ -78,4 +83,21 @@ header nav ul li a {
     background-color: var(--secondary-color);
 }
 
+/* WORK STYLING */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.work div {
+    border: 10px solid var(--tertiary-color)
+}
+.work-box {
+    display: flex;
+
+}
+
+.job-one {
+
+}
 
