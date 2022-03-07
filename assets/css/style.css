@@ -59,7 +59,8 @@ header nav ul li a {
 .hero {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
+    align-content: end;
     flex-wrap: wrap;
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
@@ -69,7 +70,7 @@ header nav ul li a {
     background-position: 80%;
 }
 
-.welcome {
+.hero h2 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
