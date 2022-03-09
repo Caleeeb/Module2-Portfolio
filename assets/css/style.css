@@ -8,19 +8,19 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
+} 
 
 body {
     color: var(--primary-color);
     background-color: var(--bg-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
 }
 
 /* HEADER STYLING */
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
@@ -52,8 +52,6 @@ header nav ul li a {
     padding: 10px 15px;
 }
 
-
-
 /* HERO STYLING */
 .hero {
     display: flex;
@@ -62,47 +60,78 @@ header nav ul li a {
     align-content: end;
     flex-wrap: wrap;
     background-image: url("../images/hero-image.jpg");
-    background-size:;
+    /*if the img doesn't work*/
+    background-color: var(--bg-color);
     background-position: center;
-    background-attachment: fixed;
-    height: 150px;
-    background-position: 80%;
+    min-height: 200px;
 }
 
 .hero h2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
     padding: 5px 10px 5px 10px;
     background-color: var(--secondary-color);
 }
 
-/* SELF STYLING */
-.self
+/* CONTENT STYLING */
+.content {
+    margin: 0 5px;
+}
 
-/* WORK STYLING */
-.work {
+/* SELF STYLING */
+.self {
     display: flex;
     flex-wrap: wrap;
+}
 
+.self h2 {
+    flex: 1 1 30%;
+    min-width: 30%;
 }
-.work div {
-    border: 10px solid var(--tertiary-color)
+
+.self-description {
+    flex: 1 1 70%;
+    min-width: 30%;
 }
-.work-box {
+
+/* WORK STYLING */
+
+.work-container {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
-.job-one {
-
+.work-container h2 {
+    flex: 1 1 30%;
+    max-width: 30%;
 }
 
-.contact nav ul {
+.run-buddy {
+    display: flex;
+    flex: 1 1 70%;
+    align-items: flex-end;
+    background-image: url("../images/run-buddy.jpg");
+    background-color: var(--bg-color);
+    border: 5px solid var(--tertiary-color);
+    max-width: 70%;
+    min-height: 300px;
+    height: auto;
+}
+
+.run-buddy h2, .run-buddy p{
+    background-color: var(--tertiary-color);
+}
+
+.contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.contact nav {
+    margin: 7px 0;
+}
+
+.contact nav ul li{
     list-style: none;
 }
 

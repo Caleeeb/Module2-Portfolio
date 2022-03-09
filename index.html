@@ -1,117 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-
-<head>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <title> Caleb Day: Web Developer </title>
-</head>
+  </head>
 
-<body> 
-
-  <!-- Header and Nav Bar. This is a where my nav bar will be and will link to sections of the website."-->
-  <header>
-      <h1>
-        Caleb Day
-      </h1>
-      <nav id="nav-bar">
-          <ul>
-            <li>
-              <a class= "nav-link" href="#about-me">About Me</a>
-            </li>
-            <li>
-              <a class= "nav-link" href="#work">Work</a>
-            </li>
-            <li>
-              <a class= "nav-link" href="#contact-me">Contact Me</a>
-            </li>
-            <li>
-              <!-- I want to link this to a PDF of my resume. -->
-              <a class= "nav-link" href="#resume">Resume</a>       
-            </li>
-          </ul>
-      </nav>
-  </header>
-      
-  <!-- Hero. The hero background image is in the CSS Style Sheet. -->
-  <section class="hero">
-  <!-- I wanted to add a simple welcome text box to add flair. -->
-  <h2>Welcome to my portfolio</h2>
-  </section>
-
-  <!-- About Me. This is a section with a quick about me. I want to have a side bar title and a main content text box-->
-  <div class="container">
-    <section id="about-me" class="self">
-      <h2>
-        About Me
-      </h2>
-      <div class="self-description">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Assumenda est ea ipsa similique sunt cumque voluptate veniam consectetur sit ullam? 
-        Magni quibusdam eaque delectus qui molestiae eveniet reiciendis est illum? 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Molestiae nisi ducimus suscipit iure voluptate itaque aliquam ipsam ea dicta, provident, aliquid illo quos quisquam. 
-        Ad ex illum adipisci quidem dolorum.
-      </div>
+  <body> 
+    <!-- Header and Nav Bar. This is a where my nav bar will be and will link to sections of the website."-->
+    <header>
+        <h1>
+          Caleb Day
+        </h1>
+        <nav id="nav-bar">
+            <ul>
+              <li>
+                <a class= "nav-link" href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a class= "nav-link" href="#work">Work</a>
+              </li>
+              <li>
+                <a class= "nav-link" href="#contact-me">Contact Me</a>
+              </li>
+              <li>
+                <!-- I want to link this to a PDF of my resume. -->
+                <a class= "nav-link" href="#resume">Resume</a>       
+              </li>
+            </ul>
+        </nav>
+    </header>
+        
+    <!-- Hero. The hero background image is in the CSS Style Sheet. -->
+    <section class="hero">
+      <!-- I wanted to add a simple welcome text box to add flair. -->
+      <h2>Welcome to my portfolio</h2>
     </section>
-
-  <!-- Work -->
-  <section id="work" class="work">
-    <div class="work-box">
-    <h2>
-      Work
-    </h2>
-    </div>
-    <div class="job-one">
-      <img src="./assets/images/run-buddy.jpg" alt="a runner tieing their shoes" />
-      <h3>Run Buddy</h3>
-    </div>
-    <div class="job-two">
-      <div class="left-two">
-        <img src="./assets/images/folders.jpeg" alt="folders opening" />
-        <h3>Form Builder</h3>
+  
+    <!-- About Me. This is a section with a quick about me. I want to have a side bar title and a main content text box-->
+    <div class="content">
+      <div id="about-me" class="self">
+        <h2>
+          About Me
+        </h2>
+        <div class="self-description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Assumenda est ea ipsa similique sunt cumque voluptate veniam consectetur sit ullam? 
+          Magni quibusdam eaque delectus qui molestiae eveniet reiciendis est illum? 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Molestiae nisi ducimus suscipit iure voluptate itaque aliquam ipsam ea dicta, provident, aliquid illo quos quisquam. 
+          Ad ex illum adipisci quidem dolorum.
+        </div>
       </div>
-      <div class="right-two">
-        <img src="./assets/images/drink-app.jpg" alt="an array of beautiful cocktails" />
-        <h3>Your Cocktail</h3>
+  
+      <!-- Work -->
+      <div id="work" class="work-container">
+        <h2>
+          Work
+        </h2>
+        <div class="run-buddy">
+          <h2>
+            Run Buddy
+          </h2>
+          <p>
+            An class assignment designing a website.
+          </p>
+        </div>
+        <!-- <div class="job2"></div>
+        <div class="job3"></div> -->
+        
       </div>
-    </div>
-  </section>
-
+    </div> <!-- content div--> 
+    
     <!-- Contact Me -->
     <!-- This section is where viewers can contact me. This section acts like a footer but with a nav bar for ways to contact me. -->
     <section id="contact-me" class="contact">
-      <h2>Contact</h2> 
-      <h2>Me</h2>
-      <nav class="contact-bar">
-        <ul>
-          <li>
-            <!-- Yes, I need to update my resume. -->
-            <a href="./assets/Resume 2021.pdf">Resume</a> 
-          </li>
-          <li>
-            574.485.4776
-          </li>
-          <li>
-            daycinematography@gmail.com
-          </li>
-          <li>
-            <a href="https://github.com/Caleeeb">GitHub</a>
-          </li>
-          <li>
-            <!-- I really like Spotify so I added this. -->
-            <a href="https://open.spotify.com/user/calebday?si=d5bd6584b4da4067">Spotify</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/caleb-j-day/">Linkedin</a>
-          </li>
-        </ul>
-
-      </nav>
+      <h2>Contact Me</h2> 
+       <nav class="contact-bar">
+         <ul>
+           <li>
+             <!-- Yes, I need to update my resume. -->
+             <a href="./assets/Resume 2021.pdf">Resume</a> 
+           </li>
+           <li>
+             574.485.4776
+           </li>
+           <li>
+             daycinematography@gmail.com
+           </li>
+           <li>
+             <a href="https://github.com/Caleeeb">GitHub</a>
+           </li>
+           <!-- Yes, I need to update my Linkedin-->
+           <li>
+             <a href="https://www.linkedin.com/in/caleb-j-day/">Linkedin</a>
+           </li>
+           <!-- I really like Spotify so I added this. -->
+           <li>
+             <a href="https://open.spotify.com/user/calebday?si=d5bd6584b4da4067">Spotify</a>
+           </li>
+         </ul>
+       </nav>
     </section>
-
-
-
   </body>
 </html>
