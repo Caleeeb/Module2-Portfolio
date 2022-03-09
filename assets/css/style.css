@@ -27,10 +27,6 @@ header {
     padding: 20px 35px;
     top: 0;
     background-color: var(--secondary-color);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
     z-index: 4;
 }
 
@@ -54,8 +50,6 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
 }
 
 
@@ -68,7 +62,7 @@ header nav ul li a {
     align-content: end;
     flex-wrap: wrap;
     background-image: url("../images/hero-image.jpg");
-    background-size: cover;
+    background-size:;
     background-position: center;
     background-attachment: fixed;
     height: 150px;
@@ -82,6 +76,9 @@ header nav ul li a {
     padding: 5px 10px 5px 10px;
     background-color: var(--secondary-color);
 }
+
+/* SELF STYLING */
+.self
 
 /* WORK STYLING */
 .work {
@@ -99,5 +96,13 @@ header nav ul li a {
 
 .job-one {
 
+}
+
+.contact nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
 }
 
