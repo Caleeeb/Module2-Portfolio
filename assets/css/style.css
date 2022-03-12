@@ -16,12 +16,26 @@ body {
     color: var(--primary-color);
     background-color: var(--bg-color);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
-    padding: 0 2%;
- 
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+p {
+    padding: 2%;
 }
 
 /* HEADER STYLING */
-header {
+header {    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -34,7 +48,6 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: xx-large;
     color: var(--primary-color);
     margin: 0;
 }
@@ -69,11 +82,12 @@ header nav ul li a:hover {
 }
 
 section {
-    padding: 30px 60px;
+    padding: 1% 60px;
 }
 
 /* HERO STYLING */
 .hero {
+    margin: 0 0 2% 0; 
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
@@ -88,7 +102,7 @@ section {
 }
 
 .hero h2 {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     background-color: var(--secondary-color);
 }
 
@@ -96,41 +110,54 @@ section {
 .self {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 5px;
 }
 
-.self h2 {
-    flex: 1 1 30%;
-    min-width: 30%;
+.self-title {
+    border-top: 5px dotted var(--tertiary-color);
 }
 
 .self-description {
-    flex: 1 1 70%;
-    min-width: 30%;
+    text-align: center;
+    border: 5px dotted var(--tertiary-color);
+    border-bottom: none;
+    max-width: 1000px;
 }
 
+.self-img{
+    border: 5px solid var(--tertiary-color);
+}
+
+.self-img img {
+    width: 100%;
+    max-width: 1000px;
+}
 
 /* WORK STYLING */
 
 .work-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.work-title {
-    padding: 5px;
+.work-title{
+    flex: 1 1 10%;
 }
 
 .jobs-container {
+    flex: 1 1 90%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
 }
 
 .jobs-container div{
-    flex-flow: column wrap;
     background-color: var(--bg-color);
     border: 5px solid var(--tertiary-color);
     max-width: 100%;
@@ -138,8 +165,7 @@ section {
     height: auto;
 }
 
-.jobs-container h2, .jobs-container p{
-    flex: 1;
+.jobs-container h3, .jobs-container p{
     background-color: var(--tertiary-color);
     width: 70%;
     max-height: 30%;
@@ -148,43 +174,35 @@ section {
 }
 
 .run-buddy {
+    flex: 2;
     background-image: url("../images/run-buddy.jpg");
     background-size: cover;
 }
 
 .cocktail-app {
+    flex: 1;
     background-image: url("../images/drink-app.jpg");
     background-size: cover;
 }
 
 .folder-app {
+    flex: 1;
     background-image: url("../images/folders.jpeg");
     background-size: cover;
 }
-
-
-/*.run-buddy {
-    flex-flow: column wrap;
-    background-image: url("../images/run-buddy.jpg");
-    background-size: cover;
-    background-color: var(--bg-color);
-    border: 5px solid var(--tertiary-color);
-    max-width: 100%;
-    min-height: 300px;
-    height: auto;
-}*/
 
 .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
     width: 100%;
     padding: 40px 35px;
+    border-bottom: dotted var(--tertiary-color);
+    margin-bottom: 2%;
 }
 
 .contact h2 {
-    font-size: xx-large;
+    padding: 1%;
 }
 
 .contact a {
@@ -193,7 +211,9 @@ section {
 }
 
 .contact nav {
-    margin: 7px 0;   
+    padding: 1%;
+    margin: 7px 0;
+
 }
 
 .contact nav ul {
@@ -218,5 +238,42 @@ section {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  
+}
+
+/* MEDIA QUERY FOR 768PX OR LESS */
+
+@media screen and (max-width: 768px) {
+
+    .work-container {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .jobs-container {
+        flex-flow: column wrap;
+    }
+    .work-title {
+        flex: 1;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact h2 {
+        border-bottom: dotted var(--tertiary-color);
+    }
+    .contact nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact nav ul li a {
+        font-size: 17px;
+    }
+
+}
+
+/* MEDIA QUERY FOR 575PX OR LESS */
+
+@media screen and (min-width: 575px) {
 
 }
