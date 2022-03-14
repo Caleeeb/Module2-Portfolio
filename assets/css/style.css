@@ -1,3 +1,4 @@
+/* establish the color scheme of the website. */
 :root {
     --primary-color: #25395C;
     --secondary-color: #fac4b2;
@@ -6,28 +7,27 @@
     --bg-color: #f5e1da;
 }
 
+/* set a base for the structure */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
 
+/* more set up, text and backup coloring */
 body {
     color: var(--primary-color);
     background-color: var(--bg-color);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
 }
 
+/* establish global h1, h2, h3 font styling */
 h1 {
     font-size: xx-large;
 }
 
 h2 {
     font-size: x-large;
-}
-
-h3 {
-    text-decoration: underline;
 }
 
 p {
@@ -74,6 +74,7 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+/* hover function, only shows when the curser is over the nav list elements */
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -82,7 +83,7 @@ header nav ul li a:hover {
 }
 
 section {
-    padding: 1% 60px;
+    padding: 1% 0px;
 }
 
 /* HERO STYLING */
@@ -132,12 +133,14 @@ section {
 
 .self-img img {
     width: 100%;
+    height: 100%;
     max-width: 1000px;
 }
 
 /* WORK STYLING */
 
 .work-container {
+    margin-bottom: 3%;
     display: flex;
     flex-wrap: row wrap;
     justify-content: center;
@@ -147,6 +150,7 @@ section {
 
 .work-title{
     flex: 1 1 10%;
+    margin-left: 1%;
 }
 
 .jobs-container {
@@ -157,7 +161,7 @@ section {
     gap: 10px;
 }
 
-.jobs-container div{
+.projects{
     background-color: var(--bg-color);
     border: 5px solid var(--tertiary-color);
     max-width: 100%;
@@ -165,20 +169,24 @@ section {
     height: auto;
 }
 
-.jobs-container h3, .jobs-container p{
+.work-caption {
     background-color: var(--tertiary-color);
     width: 70%;
     max-height: 30%;
-    margin-top: -1%;
-    padding: 1%;
+    text-decoration: none;
 }
 
 .run-buddy {
     flex: 2;
-    background-image: url("../images/run-buddy.jpg");
-    background-size: cover;
 }
 
+.run-buddy-anchor {
+    display: block;
+    background-image: url("../images/run-buddy.jpg");    
+    background-size: cover;
+    text-decoration: none;
+    color: var(--primary-color);
+}
 .cocktail-app {
     flex: 1;
     background-image: url("../images/drink-app.jpg");
@@ -198,6 +206,7 @@ section {
     width: 100%;
     padding: 40px 35px;
     border-bottom: dotted var(--tertiary-color);
+    border-top: dotted var(--tertiary-color);
     margin-bottom: 2%;
 }
 
@@ -218,7 +227,7 @@ section {
 
 .contact nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
     align-items: flex-end;
     list-style: none;
@@ -236,12 +245,9 @@ section {
     text-shadow: none;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-  
-}
 
-/* MEDIA QUERY FOR 768PX OR LESS */
+/* MEDIA QUERY FOR 768PX OR LESS 
+   I kept it simple and only used one for respacing. */
 
 @media screen and (max-width: 768px) {
 
@@ -260,6 +266,8 @@ section {
         align-items: center;
     }
     .contact h2 {
+        border-right: none;
+        padding: 1%;
         border-bottom: dotted var(--tertiary-color);
     }
     .contact nav ul {

@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="./assets/css/style.css"/>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <title> Caleb Day: Web Developer </title>
-  </head>
+<link rel="stylesheet" href="./assets/css/style.css" />
 
-  <body>
-    <!-- Header and Nav Bar. This is a where my nav bar will be and will link to sections of the website."-->
-    <header>
-        <h1>
-          Caleb Day
-        </h1>
-        <nav id="nav-bar">
-            <ul>
-              <li>
-                <a class= "nav-link" href="#about-me">About Me</a>
-              </li>
-              <li>
-                <a class= "nav-link" href="#work">Work</a>
-              </li>
-              <li>
-                <a class= "nav-link" href="#contact-me">Contact Me</a>
-              </li>
-              <li>
-                <!-- I want to link this to a PDF of my resume (yes, i need to update my resume). -->
-                <a href="./assets/Resume 2021.pdf">Resume</a>       
-              </li>
-            </ul>
-        </nav>
-    </header>
-        
-    <!-- Hero. The hero background image is in the CSS Style Sheet. -->
-    <section class="hero">
-      <!-- I wanted to add a simple welcome text box to add flair. -->
-      <h2>Welcome to my portfolio</h2>
-    </section>
-  
-    <!-- About Me. This is a section with a quick about me. I want to have a side bar title and a main content text box.-->
-      <section id="about-me" class="self">
-        <div class="self-title">
-          <h2>
-            About Me
-          </h2>
-        </div>
-        <div class="self-description">
-          <p>
-            My name is Caleb. I am a Web Developer. In 2022 I decided to flip careers paths from video editing to programming after I fell in love with the logic of coding. 
-            I enrolled in a full stack web development program through Butler University which caught me up in the world of programming. 
-            I'm excited to see where this new world will take me, and can wait to keep learning.
-          </p>
-        </div>
-        <!-- A picture of me. I don't have any professional pictures of me, well not recent ones, so this one seemed decent.-->
-        <div class="self-img">
-          <img src="./assets/images/CalebDay1.jpg" alt="Caleb Day giving a classic double thumbs up."> 
-        </div>  
-      </section>
-  
-      <!-- Work -->
-      <!-- this container is really only here to separate/flex out the "Work title from the jobs container."-->
-      <section id="work" class="work-container">
-        <div class="work-title">
-          <h2>
-            Work
-          </h2>
-        </div>
-        <!-- a separate container to flex the different work I've made. This will make it easy to add more in later. -->
-      <div class="jobs-container">
-        <div class="run-buddy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <title> Caleb Day: Web Developer </title>
+</head>
+
+<body>
+  <!-- Header and Nav Bar. This is a where my nav bar will be and will link to sections of the website."-->
+  <header>
+    <h1>
+      Caleb Day
+    </h1>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a class="nav-link" href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact-me">Contact Me</a>
+        </li>
+        <li>
+          <!-- I want to link this to a PDF of my resume (yes, i need to update my resume). -->
+          <a href="./assets/Resume 2021.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero. The hero background image is in the CSS Style Sheet. -->
+  <section class="hero">
+    <!-- I wanted to add a simple welcome text box to add flair. -->
+    <h2>Welcome to my portfolio</h2>
+  </section>
+
+  <!-- About Me. This is a section with a quick about me. I want to have a side bar title and a main content text box.-->
+  <div id="about-me" class="self">
+    <div class="self-title">
+      <h2>
+        About Me
+      </h2>
+    </div>
+    <div class="self-description">
+      <p>
+        My name is Caleb. I am a Web Developer. In 2022 I decided to flip careers paths from video editing to
+        programming after I fell in love with the logic of coding.
+        I enrolled in a full stack web development program through Butler University which caught me up in the world of
+        programming.
+        I'm excited to see where this new world will take me, and can wait to keep learning.
+      </p>
+    </div>
+    <!-- A picture of me. I don't have any professional pictures of me, well not recent ones, so this one seemed decent.-->
+    <div class="self-img">
+      <img src="./assets/images/CalebDay1.jpg" alt="Caleb Day giving a classic double thumbs up.">
+    </div>
+  </div>
+
+  <!-- Work -->
+  <!-- this container is really only here to separate/flex out the "Work title from the jobs container."-->
+  <section id="work" class="work-container">
+    <div class="work-title">
+      <h2>
+        Work
+      </h2>
+    </div>
+    <!-- a separate container to flex the different work I've made. This will make it easy to add more in later. -->
+    <div class="jobs-container">
+      <a class="run-buddy projects run-buddy-anchor" href="https://caleeeb.github.io/run-buddy/">
+        <div class="work-caption">
           <h3>
             Run Buddy
           </h3>
@@ -76,15 +80,19 @@
             An class assignment designing a website.
           </p>
         </div>
-        <!-- This is not yet made, just a placeholder for this idea that I want to work on.-->
-        <div class="cocktail-app">
+      </a>
+      <!-- This is not yet made, just a placeholder for this idea that I want to work on.-->
+      <div class="cocktail-app projects">
+        <div class="work-caption">
           <h3>
             Cocktail App.
           </h3>
           <p>Keeps an ingredients inventory and recipe list.</p>
         </div>
-        <!-- This is honestly not that good of an idea, just wanted a placeholder for future project.-->
-        <div class="folder-app">
+      </div>
+      <!-- This is honestly not that good of an idea, just wanted a placeholder for future project.-->
+      <div class="folder-app projects">
+        <div class="work-caption">
           <h3>
             Folder App.
           </h3>
@@ -93,34 +101,36 @@
           </p>
         </div>
       </div>
-      </section>
-    
-    <!-- Contact Me -->
-    <!-- This section is where viewers can contact me. This section acts like a footer but with a nav bar for ways to contact me. -->
-    <section id="contact-me" class="contact">
-      <h2>Contact Me</h2> 
-       <nav>
-         <ul>
-           <li>
-             <!-- Yes, I need to update my resume. -->
-             <a href="./assets/Resume 2021.pdf">Resume</a> 
-           </li>
-           <li>
-             <a>574.485.4776</a>
-           </li>
-           <li>
-             <a>daycinematography@gmail.com</a>
-           </li>
-           <li>
-           <!-- Link to my Github page-->  
-             <a href="https://github.com/Caleeeb">GitHub</a>
-           </li>
-           <!-- Yes, I need to update my Linkedin-->
-           <li>
-             <a href="https://www.linkedin.com/in/caleb-j-day/">Linkedin</a>
-           </li>
-         </ul>
-       </nav>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <!-- Contact Me -->
+  <!-- This section is where viewers can contact me. This section acts like a footer but with a nav bar for ways to contact me. -->
+  <section id="contact-me" class="contact">
+    <h2>Contact Me</h2>
+    <nav>
+      <ul>
+        <li>
+          <!-- Yes, I need to update my resume. -->
+          <a href="./assets/Resume 2021.pdf" target="_blank">Resume</a>
+        </li>
+        <li>
+          <a>574.485.4776</a>
+        </li>
+        <li>
+          <a>daycinematography@gmail.com</a>
+        </li>
+        <li>
+          <!-- Link to my Github page-->
+          <a href="https://github.com/Caleeeb">GitHub</a>
+        </li>
+        <!-- Yes, I need to update my Linkedin-->
+        <li>
+          <a href="https://www.linkedin.com/in/caleb-j-day/">Linkedin</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</body>
+
 </html>
